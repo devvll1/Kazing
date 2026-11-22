@@ -6,15 +6,6 @@ import { LoaderCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { createClient } from "@/lib/supabase/client";
-
-type JoinResult = { session_id: string; player_name: string };
-
-function friendlyJoinError(message?: string) {
-  if (message?.includes("display name")) return message;
-  if (message?.includes("Game PIN")) return message;
-  return "We could not join that game. Check the PIN and try again.";
-}
 
 export function JoinForm() {
   const router = useRouter();
@@ -26,11 +17,10 @@ export function JoinForm() {
     const pin = String(formData.get("pin") ?? "").trim();
     const name = String(formData.get("name") ?? "").trim();
     try {
-      const supabase = createClient();
-      const { data, error: joinError } = await supabase.rpc("join_lobby", { requested_pin: pin, requested_name: name });
-      const player = (data as JoinResult[] | null)?.[0];
-      if (joinError || !player) { setError(friendlyJoinError(joinError?.message)); return; }
-      router.push(`/game/${player.session_id}?name=${encodeURIComponent(player.player_name)}`); router.refresh();
+      const response = await fetch("/api/join", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ pin, name }) });
+      const result = await response.json() as { sessionId?: string; error?: string };
+      if (!response.ok || !result.sessionId) { setError(result.error ?? "We could not join that game. Check the PIN and try again."); return; }
+      router.push(`/game/${result.sessionId}`); router.refresh();
     } catch { setError("We could not join that game. Check your connection and try again."); }
     finally { setIsJoining(false); }
   }
