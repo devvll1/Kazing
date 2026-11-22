@@ -4,11 +4,11 @@
 
 **Blocked by:** 01.
 
-**Status:** todo
+**Status:** done
 
-- [ ] The app has Kazing! metadata, responsive layout, and accessible visual foundations.
-- [ ] An Instructor sees a clear route to host a quiz.
-- [ ] A Student sees a clear route to join a game.
-- [ ] Static host and player states do not claim unbuilt features work.
+- [x] The app has Kazing! metadata, responsive layout, and accessible visual foundations.
+- [x] An Instructor sees a clear route to host a quiz.
+- [x] A Student sees a clear route to join a game.
+- [x] Static host and player states do not claim unbuilt features work.
 - [x] The production build succeeds.
-- [ ] Works on the live URL.
+- [x] Works on the live URL.
