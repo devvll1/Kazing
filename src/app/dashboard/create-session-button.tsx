@@ -39,7 +39,7 @@ export function CreateSessionButton() {
   return (
     <div className="mt-7">
       <Button size="lg" onClick={createSession} disabled={isCreating}>
-        {isCreating ? <><LoaderCircle className="size-4 animate-spin" aria-hidden="true" /> Preparing game…</> : <><Play className="size-4" aria-hidden="true" /> Start the Space Challenge</>}
+        {isCreating ? <><LoaderCircle className="size-4 animate-spin" aria-hidden="true" /> Preparing game…</> : <><Play className="size-4" aria-hidden="true" /> Start Python Basics</>}
       </Button>
       {error ? <p role="alert" className="mt-3 rounded-xl bg-red-50 px-3 py-2 text-sm font-medium text-red-700">{error}</p> : null}
     </div>

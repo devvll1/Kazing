@@ -22,7 +22,7 @@ export default async function DashboardPage() {
           <div><p className="text-sm font-bold uppercase tracking-widest text-primary">Kazing! instructor</p><h1 className="mt-1 text-3xl font-black tracking-tight">Your quiz space</h1></div>
           <SignOutButton />
         </header>
-        <Card className="mt-10 border-2 border-foreground shadow-[8px_8px_0_#ffb000]"><CardHeader><Rocket className="size-9 text-primary" aria-hidden="true" /><CardTitle className="mt-3 text-2xl">Ready for your first live game?</CardTitle></CardHeader><CardContent><p className="max-w-2xl leading-7 text-muted-foreground">You are signed in as {user.email}. The prepared Space Challenge contains three questions and is ready for your classroom.</p><CreateSessionButton /></CardContent></Card>
+        <Card className="mt-10 border-2 border-foreground shadow-[8px_8px_0_#ffb000]"><CardHeader><Rocket className="size-9 text-primary" aria-hidden="true" /><CardTitle className="mt-3 text-2xl">Ready for your first live game?</CardTitle></CardHeader><CardContent><p className="max-w-2xl leading-7 text-muted-foreground">You are signed in as {user.email}. The prepared Python Basics quiz contains ten questions and is ready for your classroom.</p><CreateSessionButton /></CardContent></Card>
       </div>
     </main>
   );
