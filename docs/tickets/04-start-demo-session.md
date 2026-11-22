@@ -4,11 +4,11 @@
 
 **Blocked by:** 03.
 
-**Status:** todo
+**Status:** done
 
-- [ ] A signed-in Instructor can select the prepared demo quiz.
-- [ ] Starting a Session creates a unique six-digit Game PIN.
-- [ ] The Session stores an immutable snapshot of its Questions.
-- [ ] The host lobby clearly displays the Game PIN and Session state.
-- [ ] The production build succeeds.
-- [ ] Works on the live URL.
+- [x] A signed-in Instructor can select the prepared demo quiz.
+- [x] Starting a Session creates a unique six-digit Game PIN.
+- [x] The Session stores an immutable snapshot of its Questions.
+- [x] The host lobby clearly displays the Game PIN and Session state.
+- [x] The production build succeeds.
+- [x] Works on the live URL.
