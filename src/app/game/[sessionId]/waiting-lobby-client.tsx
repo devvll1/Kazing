@@ -16,8 +16,8 @@ export function WaitingLobbyClient({ sessionId }: { sessionId: string }) {
   }, [sessionId]);
 
   useEffect(() => {
-    window.addEventListener("pagehide", sendLeaveSignal);
-    return () => window.removeEventListener("pagehide", sendLeaveSignal);
+    window.addEventListener("popstate", sendLeaveSignal);
+    return () => window.removeEventListener("popstate", sendLeaveSignal);
   }, [sendLeaveSignal]);
 
   async function leaveGame() {
