@@ -1,8 +1,8 @@
-# 06 — Finish and rank the session
+# 07 — Finish and rank the session
 
 **What to build:** Persist scores, finish the Session, and show its final ranked leaderboard to the class.
 
-**Blocked by:** 05.
+**Blocked by:** 06.
 
 **Status:** todo
 

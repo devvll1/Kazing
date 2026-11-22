@@ -3,22 +3,22 @@
 /* Design tokens. Change these to re-skin the whole app at once —
    every component below reads from them. */
 :root {
-  --background: #ffffff;
-  --foreground: #0a0a0a;
+  --background: #fffdf8;
+  --foreground: #271d47;
   --card: #ffffff;
-  --card-foreground: #0a0a0a;
-  --primary: #1a1a1a;
-  --primary-foreground: #fafafa;
-  --secondary: #f4f4f5;
-  --secondary-foreground: #1a1a1a;
-  --muted: #f4f4f5;
-  --muted-foreground: #71717a;
+  --card-foreground: #271d47;
+  --primary: #5b44c8;
+  --primary-foreground: #ffffff;
+  --secondary: #f2efff;
+  --secondary-foreground: #271d47;
+  --muted: #f5f1ff;
+  --muted-foreground: #675f78;
   --destructive: #dc2626;
   --destructive-foreground: #fafafa;
-  --border: #e4e4e7;
-  --input: #e4e4e7;
-  --ring: #0a0a0a;
-  --radius: 0.625rem;
+  --border: #d9d1ed;
+  --input: #d9d1ed;
+  --ring: #5b44c8;
+  --radius: 0.875rem;
 }
 
 @media (prefers-color-scheme: dark) {

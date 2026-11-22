@@ -1,8 +1,8 @@
-# 05 — Run questions and accept answers
+# 06 — Run questions and accept answers
 
 **What to build:** Let the host run the prepared Questions and safely accept one on-time answer from each Student.
 
-**Blocked by:** 04.
+**Blocked by:** 05.
 
 **Status:** todo
 

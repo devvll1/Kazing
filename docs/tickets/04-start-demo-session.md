@@ -1,8 +1,8 @@
-# 03 — Start a demo quiz session
+# 04 — Start a demo quiz session
 
 **What to build:** Let an Instructor start the prepared demo quiz, create a safe live Session, and see its Game PIN in a host lobby.
 
-**Blocked by:** 02.
+**Blocked by:** 03.
 
 **Status:** todo
 

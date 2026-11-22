@@ -1,8 +1,8 @@
-# 04 — Students join the lobby
+# 05 — Students join the lobby
 
 **What to build:** Let Students join an open Session with a Game PIN and distinct display name, and update the host lobby roster.
 
-**Blocked by:** 03.
+**Blocked by:** 04.
 
 **Status:** todo
 
